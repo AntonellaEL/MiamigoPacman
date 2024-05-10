@@ -1,3 +1,17 @@
 body{
     background-image: url(images/fondo-pacman.jpg);
 }
+.logtex{
+    height: 300px;
+}
+.logpac{
+    height: 200px;;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.fants{
+    height: 100px;
+    width:100px;
+}
