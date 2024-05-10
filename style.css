@@ -7,7 +7,7 @@ body{
 .logpac{
     height: 200px;;
 }
-section{
+section, header{
     display: flex;
     justify-content: center;
 }
