@@ -1,6 +1,11 @@
 body{
     background-image: url(images/fondo-pacman.jpg);
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
+
 header{
  height: 300px;
  width: 700px;
@@ -8,19 +13,20 @@ header{
   display: flex;
   justify-content: center;
 }
+
 .logtex{
     height: 400px;
 }
+
 .logpac{
     margin-top: 8%;
     height: 200px;;
 }
+
 section{
     margin-top: 10%;
     display: flex;
     justify-content: center;
+    height: 100px;  
 }
-.fants{
-    height: 100px;
-    width:100px;
-}
+
