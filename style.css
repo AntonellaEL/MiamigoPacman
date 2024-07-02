@@ -1,32 +1,68 @@
-body{
+body {
     background-image: url(images/fondo-pacman.jpg);
     background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-header{
- height: 300px;
- width: 700px;
- margin: auto;
-  display: flex;
-  justify-content: center;
+header {
+    height: 300px;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-.logtex{
+.logtex {
     height: 400px;
 }
 
-.logpac{
+.logpac {
     margin-top: 8%;
-    height: 200px;;
+    height: 200px;
 }
 
-section{
+#score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section {
     margin-top: 10%;
     display: flex;
     justify-content: center;
-    height: 100px;  
+    align-items: center;
+    height: 400px;
 }
 
+#pacman, #ghost {
+    width: 100px;
+    height: 100px
+}
+
+@font-face {
+    font-family: 'PacFont';
+    src: url('./fonts/PAC-FONT\ \(1\).TTF') format('truetype'); 
+   
+}
+.game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'PacFont';
+    font-size: 200px;
+    color: orange;
+    padding: 20px;
+    z-index: 9999;
+    display: none; /* Inicialmente oculto */
+}
